@@ -31,7 +31,7 @@ FROM retirement_titles
 ORDER BY emp_no, to_date DESC;
 
 -- retiring_titles
-SELECT COUNT (title), title
+SELECT COUNT (emp_no), title
 INTO retiring_titles
 FROM unique_titles
 GROUP BY title
